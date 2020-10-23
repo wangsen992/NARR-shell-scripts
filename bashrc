@@ -2,7 +2,7 @@
 
 # wgrib script related envs
 export WGRIB_SCRIPT_ROOT=$(pwd)
-export WGRIB_SCRIPT_SRC=${WGRIB_SCRIPT_SRC}/src
+export WGRIB_SCRIPT_SRC=${WGRIB_SCRIPT_ROOT}/src
 export WGRIB_SCRIPT_BIN=${WGRIB_SCRIPT_ROOT}/bin #change if needed
 export PATH=$WGRIB_SCRIPT_BIN:$PATH
 
