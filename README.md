@@ -13,5 +13,4 @@ Steps to convert a NARR file to netcdf of multiple variables:
 		 be loaded directly from python xarray.  
 
 Note: 
-Currently there is no one-liner to extract all variables at the same time. Use
-a custom bash script for each project then. 
+For grib files with mixed level type or data type (reanalysis or forecast), `extract_all_vars` does not work well yet. Must enforce a single type to ensure the rest of the workflow. 
