@@ -14,3 +14,6 @@ Steps to convert a NARR file to netcdf of multiple variables:
 
 Note: 
 For grib files with mixed level type or data type (reanalysis or forecast), `extract_all_vars` does not work well yet. Must enforce a single type to ensure the rest of the workflow. 
+
+Reference: 
+wgrib.c : https://www.cpc.ncep.noaa.gov/products/wesley/wgrib.html
