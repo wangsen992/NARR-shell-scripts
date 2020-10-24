@@ -1,9 +1,16 @@
 #!/bin/bash
 
+CC=gcc
+
 # wgrib script related envs
-export WGRIB_SCRIPT_ROOT=$(pwd)
+if [[ -z "${WGRIB_SCRIPT_ROOT}" ]]; then
+  export WGRIB_SCRIPT_ROOT=$(pwd)
+fi
 export WGRIB_SCRIPT_SRC=${WGRIB_SCRIPT_ROOT}/src
 export WGRIB_SCRIPT_BIN=${WGRIB_SCRIPT_ROOT}/bin #change if needed
+if [ ! -d ${WGRIB_SCRIPT_BIN} ]; then
+  mkdir -p ${WGRIB_SCRIPT_BIN}
+fi
 export PATH=$WGRIB_SCRIPT_BIN:$PATH
 
 if [ ! -f $WGRIB_SCRIPT_BIN/wgrib ]; then
