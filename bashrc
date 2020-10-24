@@ -18,12 +18,14 @@ if [ ! -f $WGRIB_SCRIPT_BIN/wgrib ]; then
 	chmod 755 $WGRIB_SCRIPT_BIN/wgrib
 fi
 
-for BASH_SCRIPT in list_var extract_var extract_all_vars
+for BASH_SCRIPT in list_var extract_var extract_all_vars process_tar
 do
+  chmod 755 $WGRIB_SCRIPT_SRC/$BASH_SCRIPT.sh
 	ln -s $WGRIB_SCRIPT_SRC/$BASH_SCRIPT.sh $WGRIB_SCRIPT_BIN/$BASH_SCRIPT
 done
 
-alias load_var="python $WGRIB_SCRIPT_SRC/load_var.py"
+chmod 755 $WGRIB_SCRIPT_SRC/"load_var.py"
+ln -s $WGRIB_SCRIPT_SRC/"load_var.py" $WGRIB_SCRIPT_BIN/"load_var"
 
 # data related envs
 export DATA_PATH=$WORKSPACE/Projects/wgrib-workflow/data

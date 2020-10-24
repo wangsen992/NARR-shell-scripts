@@ -1,4 +1,4 @@
-#!$HOME/.conda/envs/cfog/bin/python
+#!/usr/bin/env python3
 """Load grib vars from extract_all_vars to xarray"""
 
 import sys

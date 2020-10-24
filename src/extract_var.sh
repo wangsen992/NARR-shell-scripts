@@ -23,7 +23,8 @@ else
 	if [ -f ${SRC_NAME} ]; then
 		echo "Extracting variable ${VAR_NAME} from file ${SRC_NAME}..."
 		wgrib -s ${SRC_NAME} | \
-			grep ":${VAR_NAME}:${ARGS}" | \
+			grep "${VAR_NAME}" | \
+			grep "${ARGS}" | \
 			wgrib -i -grib ${SRC_NAME} ${WGRIB_FLAG} -o "${OUTPUT_DIR}/${VAR_NAME}.grib"
 
 		echo "Completed. Output to ${OUTPUT_DIR}/${VAR_NAME}.grib"
