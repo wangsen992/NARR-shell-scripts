@@ -18,7 +18,7 @@ else
     if [  -z $ARGS ]; then
       extract_var ${VAR_NAME} ${SRC_NAME} ${OUTPUT_DIR}
     else
-      extract_var ${VAR_NAME} ${SRC_NAME} ${OUTPUT_DIR} ${ARGS}
+      extract_var ${VAR_NAME} ${SRC_NAME} ${OUTPUT_DIR} "${ARGS}"
     fi
   done
 fi
