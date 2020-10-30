@@ -27,6 +27,9 @@ done
 chmod 755 $WGRIB_SCRIPT_SRC/"load_var.py"
 ln -s $WGRIB_SCRIPT_SRC/"load_var.py" $WGRIB_SCRIPT_BIN/"load_var"
 
+chmod 755 $WGRIB_SCRIPT_SRC/"rdams_client.py"
+ln -s $WGRIB_SCRIPT_SRC/"rdams_client.py" $WGRIB_SCRIPT_BIN/"rdams"
+
 # data related envs
 export DATA_PATH=$WORKSPACE/Projects/wgrib-workflow/data
 export WGRIB_TAR_PATH=${DATA_PATH}/tar_files
