@@ -1,8 +1,8 @@
 A list of smiple shell functions making use of wgrib
 
-list_var: List  variables available in the grib1 file. 
-extract_var: Extract single variable value from source file to target directory. 
-load_var.py: Load grib to xarray and save to new directory. 
+wgribListVar: List  variables available in the grib1 file. 
+wgribExtractVar: Extract single variable value from source file to target directory. 
+wgribLoadVar.py: Load grib to xarray and save to new directory. 
 
 Steps to convert a NARR file to netcdf of multiple variables:
 
