@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]; then
 	echo "Convient function to extract variables to an xarray loadable grib file"
-	echo "Usage: extract_var variable-short-name filename  output-dir [args] "
+	echo "Usage: wgribExtractVar variable-short-name filename  output-dir [args] "
 	echo "Arguments:"
 	echo "=========="
 	echo "filename : you know what"

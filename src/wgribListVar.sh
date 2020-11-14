@@ -2,7 +2,7 @@
 
 if [ $# -eq 0 ]; then
 	echo "List variables available  in the grib1 file."
-	echo "Usage: list_var filename [-s]"
+	echo "Usage: wgribListVar filename [-s]"
 	echo "options: -s short names only for extraction"
 else
 	SRC_NAME=$1

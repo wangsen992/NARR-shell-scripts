@@ -26,7 +26,7 @@ def combine_grib_vars_to_xr(grib_dir : Path,
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Combine grib files in a directory to one single netcdf file.")
-        print("Usage: load_var src_dir output_dir")
+        print("Usage: wgribLoadVar src_dir output_dir")
     else:
         grib_dir = Path(sys.argv[1])
         output_dir = Path(sys.argv[2])
