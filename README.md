@@ -32,16 +32,20 @@ An example data is provided in the `data` directory. Here referred to as
 `GRIB1_DATA`. 
 
 To see a list of variables available in the grib file. 
+
 `wgribListVar $GRIB1_DATA`
 
 Extract a single variable to local directory as a grib file. 
+
 `wgribExtractAllVars CDLYR $GRIB1_DATA .`
 
 Extract all variables present in the grib file to `clm` directory. Create `clm`
 if needed
+
 `wgribExtractAllVars $GRIB1_DATA clm`
 
 Combine created grib files in a directory to a netcdf file for loading. 
+
 `wgribLoadVar clm .`
 
 
