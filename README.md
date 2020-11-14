@@ -8,6 +8,8 @@ Run `source bashrc` in the repo directory. The scripts should be available for
 use in the current terminal session. Type `wgrib` and `Tab` for available
 commands. 
 
+Also, make sure use the script with the `environment.yml` satistfied. 
+
 ## Install to environments for long-term use
 Refer to comments in `bashrc`. 
 
