@@ -24,13 +24,14 @@ do
 	ln -s $WGRIB_SCRIPT_SRC/$BASH_SCRIPT.sh $WGRIB_SCRIPT_BIN/$BASH_SCRIPT
 done
 
-chmod 755 $WGRIB_SCRIPT_SRC/"load_var.py"
-ln -s $WGRIB_SCRIPT_SRC/"load_var.py" $WGRIB_SCRIPT_BIN/"load_var"
+chmod 755 $WGRIB_SCRIPT_SRC/"wgribLoadVar.py"
+ln -s $WGRIB_SCRIPT_SRC/"wgribLoadVar.py" $WGRIB_SCRIPT_BIN/"wgribLoadVar"
 
 chmod 755 $WGRIB_SCRIPT_SRC/"rdams_client.py"
 ln -s $WGRIB_SCRIPT_SRC/"rdams_client.py" $WGRIB_SCRIPT_BIN/"rdams"
 
 # data related envs
+# Those envs are not used
 export DATA_PATH=$WORKSPACE/Projects/wgrib-workflow/data
 export WGRIB_TAR_PATH=${DATA_PATH}/tar_files
 export WGRIB_TMP1_PATH=${DATA_PATH}/tmp1_grib
